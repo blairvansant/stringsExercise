@@ -24,6 +24,9 @@ var alpha = document.getElementById('alpha');
 var palin = document.getElementById('palin');
 var result = document.getElementById('result');
 var clear = document.getElementById('clear');
+var domText = document.getElementById('result')
+
+
 
 function textonly(e){
 var code;
@@ -37,9 +40,12 @@ var character = String.fromCharCode(code);
 }
 
 function reversal(){
+	var newInput = input.value;
+	var revInput = newIput.split("").reverse().join("")
+	domText.innerHTML += <div>Your sentence in reverse: "+" "<strong>" + sortAlpha + "</strong></div>";
 
 }
-
+	
 function alphabet(){
 
 }
